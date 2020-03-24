@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop Market</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <!--menu phone and tablet start-->
+            <div class="d-flex">
+                <div id="burg">
+                    <nav class="burg_span">
+                        <button class="nav-toggle">
+                            <span class="bar-top"></span>
+                            <span class="bar-mid"></span>
+                            <span class="bar-bot"></span>
+                        </button>
+                    </nav>
+                </div>
+                <div class="header__logo_wrap_mobile">
+                        <div class="header__logo_wrap">
+                                <div class="header__logo">
+                                    <span>Магазин</span>
+                                    <p>Распродаж</p>
+                                </div>
+                            </div>
+                </div>
+                <div class="header__btn_basket_mobile">
+                    <button class="header__btn_basket" type="button"><a href=""><i
+                                class="fa fa-shopping-basket"></i></a></button>
+                </div>
+            </div>
+            <div class="mobile-tab" style="display: none;">
+                <nav id="mobile">
+                    <ul class="mobile-item">
+                        <li><a href="#account">Мой Аккаунт</a></li>
+                        <li><a href="#favourites">Избранное</a></li>
+                        <li><a href="#basket">Моя Корзина</a></li>
+                        <li><a href="#logIn">Вход</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--menu phone and tablet end-->
+            <div class="header__nav_wrap">
+                <div class="header__logo_wrap">
+                    <!--<img src="img/logo_top.png" alt="">-->
+                    <span>Магазин</span>
+                    <p>Распродаж</p>
+                </div>
+                <div class="header__menu_wrap">
+                    <!--menu desktop-->
+                    <div class="header__menu">
+                        <ul>
+                            <li><a href="#">Мой Аккаунт</a></li>
+                            <li><a href="#">Избранное</a></li>
+                            <li><a href="#">Моя Корзина</a></li>
+                            <li class="header__last_link"><a href="#">Вход</a></li>
+                        </ul>
+                    </div>
+                    <!--search and basket-->
+                    <div class="header__serach_basket">
+                        <div class="input-group">
+                            <input class="form-control py-2" type="search" placeholder="Поиск..."
+                                id="example-search-input">
+                            <span class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="header__basket_wrap">
+                            <div class="header__basket_info">
+                                <div class="header__btn_basket_wrap">
+                                    <button class="header__btn_basket" type="button"><i
+                                            class="fa fa-shopping-basket"></i></button>
+                                </div>
+                                <div class="header__title_basket">
+                                    <p>Корзина</p>
+                                    <span>600.00 <i class="fa fa-rub"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nav">
+        <!--tablet nav start-->
+        <div class="nav__title_info tablet_menu">
+            <div class="input-group">
+                <input class="form-control py-2" type="search" placeholder="Поиск..." id="example-search-input">
+                <span class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <div class="nav__categories_wrap">
+                <p class="tablet-toggle">Категории</p>
+            </div>
+            <div class="nav__title_nav_wrap tablet_nav">
+                <div class="nav__title_nav"><a href="#">Одежда</a></div>
+                <div class="nav__title_nav"><a href="#">Электронная техника</a></div>
+                <div class="nav__title_nav"><a href="#">Красота и здоровье</a></div>
+                <div class="nav__title_nav"><a href="#">Часы</a></div>
+                <div class="nav__title_nav"><a href="#">Ювелирные изделия</a></div>
+                <div class="nav__title_nav"><a href="#">Обувь</a></div>
+            </div>
+        </div>
+        <!--tablet nav end-->
+        <div class="container">
+            <div class="nav__title_info d-flex">
+                <div class="nav__categories_wrap">
+                    <a href="#">Категории</a>
+                </div>
+                <div class="nav__title_nav_wrap d-flex">
+                    <div class="nav__title_nav"><a href="#">Одежда</a></div>
+                    <div class="nav__title_nav"><a href="#">Электронная техника</a></div>
+                    <div class="nav__title_nav"><a href="#">Красота и здоровье</a></div>
+                    <div class="nav__title_nav"><a href="#">Часы</a></div>
+                    <div class="nav__title_nav"><a href="#">Ювелирные изделия</a></div>
+                    <div class="nav__title_nav"><a href="#">Обувь</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="collection">
+        <div class="container">
+            <!--carousel start-->
+            <div class="slider single-item">
+                <div class="collection__bg_slider clothes"><a href="">Одежда</a></div>
+                <div class="collection__bg_slider electronics"><a href="">Электроника</a></div>
+                <div class="collection__bg_slider shoes"><a href="">Обувь</a></div>
+                <div class="collection__bg_slider watch"><a href="">Часы</a></div>
+                <div class="collection__bg_slider jewelry"><a href="">Украшения</a></div>
+                <div class="collection__bg_slider beauty"><a href="">Здоровье</a></div>
+                <div class="collection__bg_slider children"><a href="">Детям</a></div>
+                <div class="collection__bg_slider sport"><a href="">Спорт</a></div>
+                <div class="collection__bg_slider garden"><a href="">Сад</a></div>
+            </div>
+            <!--carousel end-->
+            <div class="row">
+                <div class="col-lg-3 collection__sidebar_left">
+                    <!--категория 1-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_one" class="spoiler-title">Одежда
+                            <i id="down" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Женская</a>
+                                <a href="#" class="collection__text_slide">Мужская</a>
+                                <a href="#" class="collection__text_slide">Для детей</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 2-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_two" class="spoiler-title">Электроника
+                            <i id="down_two" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_two" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Телевизоры</a>
+                                <a href="#" class="collection__text_slide">Смартфоны</a>
+                                <a href="#" class="collection__text_slide">Ноутбуки и комьютеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 3-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_three" class="spoiler-title">Обувь
+                            <i id="down_three" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_three" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Мужская</a>
+                                <a href="#" class="collection__text_slide">Женская</a>
+                                <a href="#" class="collection__text_slide">Для детей</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 4-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_four" class="spoiler-title">Часы
+                            <i id="down_four" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_four" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Электронные</a>
+                                <a href="#" class="collection__text_slide">Настенные</a>
+                                <a href="#" class="collection__text_slide">Наручные</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 5-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_five" class="spoiler-title">Ювелирные изделия
+                            <i id="down_five" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_five" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Кольца</a>
+                                <a href="#" class="collection__text_slide">Цепочки</a>
+                                <a href="#" class="collection__text_slide">Серьги</a>
+                                <a href="#" class="collection__text_slide">Браслеты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 6-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_six" class="spoiler-title">Здоровье и красота
+                            <i id="down_six" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_six" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Крема</a>
+                                <a href="#" class="collection__text_slide">Гели для душа</a>
+                                <a href="#" class="collection__text_slide">Шампуни</a>
+                                <a href="#" class="collection__text_slide">Косметика</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 7-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_seven" class="spoiler-title">Детям
+                            <i id="down_seven" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_seven" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Игрушки</a>
+                                <a href="#" class="collection__text_slide">Книги</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 8-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_eight" class="spoiler-title">Спорт
+                            <i id="down_eight" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_eight" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Скейтборды</a>
+                                <a href="#" class="collection__text_slide">Сноудборды</a>
+                                <a href="#" class="collection__text_slide">Велосипеды</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--категория 9-->
+                    <div class="collection__wrap_slide">
+                        <button type="button" id="slide_nine" class="spoiler-title">Для дома и сада
+                            <i id="down_nine" class="fa fa-chevron-circle-right" style="display: block;"></i>
+                            <i id="up_nine" class="fa fa-chevron-circle-down" style="display: none;"></i>
+                        </button>
+                        <div class="spoiler-body" style="display: none;">
+                            <div class="collection__wrap_text_slide">
+                                <a href="#" class="collection__text_slide">Садавый инвентарь</a>
+                                <a href="#" class="collection__text_slide">Бытовая химия</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 collection__sidebar_right">
+                    <div class="collection__bg_wrap">
+                        <div class="collection__title_info">
+                            <p class="collection__title">Коллекция 2019</p>
+                            <p class="collection__info">сэкономьте</p>
+                            <p class="collection__sale">50%</p>
+                            <p class="collection__info_buy">на первой покупке</p>
+                        </div>
+                        <div class="collection__buy_btn">
+                            <button type="button"><a href="#">Купить сейчас</a></button>
+                        </div>
+                    </div>
+                    <div class="collection__special_bar_wrap">
+                        <div class="collection__special_bar">
+                            <span>Возврат денег</span>
+                            <p>Гарантия возврата денег 30 дней</p>
+                        </div>
+                        <div class="collection__special_bar">
+                            <span>Бесплатная доставка</span>
+                            <p>Доставка только свыше 5000<i class="fa fa-rub"></i></p>
+                        </div>
+                        <div class="collection__special_bar">
+                            <span>Специальная распродажа</span>
+                            <p>Скидка на все товары в размере 500<i class="fa fa-rub"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 products__sidebar_left">
+                    <div class="products__hot_deals">
+                        <p>Спец предложения</p>
+                    </div>
+                    <!--carousel start-->
+                    <div class="slider hot-deals">
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/hot_deals.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Кроссовки Nike</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/hot_deals.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Кроссовки Nike</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/hot_deals.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Кроссовки Nike</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/hot_deals.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Кроссовки Nike</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/hot_deals.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Кроссовки Nike</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carousel end-->
+                </div>
+                <div class="col-lg-8 products__sidebar_right">
+                    <div class="products__hot_deals">
+                        <p>Новые товары</p>
+                        <div class="products__categories_slider">
+                            <a href="">Все</a>
+                            <a href="">Одежда</a>
+                            <a href="">Электроника</a>
+                            <a href="">Обувь</a>
+                        </div>
+                    </div>
+                    <!--carousel start-->
+                    <div class="slider new-products">
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/dress.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="#">Топ женский Белый</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/notebook.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="#">Ноутбук Asus</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/bag.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="#">Сумка дорожная</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/tv.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">ЖК Телевизор</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__bg_slider">
+                            <div>
+                                <img src="img/notebook.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="#">Ноутбук Asus</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carousel end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 deal__sidebar_left">
+                    <div class="deal__hot_deals">
+                        <p>Топ недели</p>
+                    </div>
+                    <!--carousel start-->
+                    <div class="slider hot-deals">
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/bag.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="deal__title_info">
+                                <a href="">Сумка дорожная</a>
+                                <div class="deal__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="deal__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/bag.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="deal__title_info">
+                                <a href="">Сумка дорожная</a>
+                                <div class="deal__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="deal__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/bag.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="deal__title_info">
+                                <a href="">Сумка дорожная</a>
+                                <div class="deal__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="deal__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/bag.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="deal__title_info">
+                                <a href="">Сумка дорожная</a>
+                                <div class="deal__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="deal__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/bag.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="deal__title_info">
+                                <a href="">Сумка дорожная</a>
+                                <div class="deal__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="deal__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carousel end-->
+                </div>
+                <div class="col-lg-8 deal__sidebar_right">
+                    <div class="row">
+                        <div class="col-6 deal__fashion_one">
+                            <div class="deal__fashion">
+                                <span>2019</span>
+                                <p>Распродажа моды</p>
+                                <a href="">Купить сейчас</a>
+                            </div>
+                        </div>
+                        <div class="col-6 deal__fashion_two">
+                            <div class="deal__fashion">
+                                <span>2019</span>
+                                <p>Распродажа моды</p>
+                                <a href="">Купить сейчас</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal__hot_deals">
+                        <p>Выбор покупателей</p>
+                        <div class="deal__categories_slider">
+                            <a href="">Все</a>
+                            <a href="">Одежда</a>
+                            <a href="">Электроника</a>
+                            <a href="">Обувь</a>
+                        </div>
+                    </div>
+                    <!--carousel start-->
+                    <div class="slider deal-products">
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/camera.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Камера</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/port.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Рюкзак</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/dress2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Толстовка</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/comp.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Комп. мышь</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal__bg_slider">
+                            <div>
+                                <img src="img/notebook.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="products__title_info">
+                                <a href="">Ноутбук Asus</a>
+                                <div class="products__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <span>5 600</span><i class="fa fa-rub"></i>
+                                </div>
+                                <div class="products__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carousel end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 form__sidebar_left">
+                    <div class="form__subscribe_wrap">
+                        <p>Новостная рассылка</p>
+                    </div>
+                    <div class="form__sub_form">
+                        <p>Подпишитесь на нашу рассылку!</p>
+                    </div>
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInput"></label>
+                                <input type="email" class="form-control" id="inlineFormInput" placeholder="Ваша почта">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-2">Подписаться</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-8 form__sidebar_right">
+                    <div class="form__img_left">
+                        <img src="img/notebook2.png" alt="">
+                    </div>
+                    <div class="form__product_wrap">
+                        <div class="form__info_product">
+                            <p>Совершенный ноутбук</p>
+                            <span>Новый дисплей Retina 18”</span>
+                        </div>
+                        <div class="form__product_buy"><button type="submit">Купить сейчас</button></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="commodity">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 commodity__sidebar_left">
+                    <div class="commodity__hot_deals">
+                        <img src="img/banner.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 commodity__sidebar_right">
+                    <div class="commodity__hot_deals">
+                        <p>Другие товары</p>
+                    </div>
+                    <!--carousel start-->
+                    <div class="slider commodity-products">
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/camera.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Камера</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/comp.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Комп. мышь</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/dress2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Толстовка</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/dress.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Топ женский</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/notebook.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Ноутбук Asus</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/dress2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Толстовка</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commodity__bg_slider">
+                            <div>
+                                <img src="img/notebook.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="commodity__title_info">
+                                <a href="">Ноутбук Asus</a>
+                                <div class="commodity__info d-flex">
+                                    <p>6 300<i class="fa fa-rub price"></i></p>
+                                    <div><span>5 600</span><i class="fa fa-rub"></i></div>
+                                </div>
+                                <div class="commodity__star_wrap">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carousel end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        .<div class="container">
+            <div class="row">
+                <div class="partners__title d-flex">
+                    <p>Наши партнеры</p>
+                </div>
+                <div class="partners__wrap_img d-flex">
+                    <img src="img/amazon-logo.svg" alt="">
+                    <img src="img/amazon-logo.svg" alt="">
+                    <img src="img/amazon-logo.svg" alt="">
+                    <img src="img/amazon-logo.svg" alt="">
+                    <img src="img/amazon-logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo_wrap">
+                        <div class="footer__logo_wrap">
+                            <span>Магазин</span>
+                            <p>Распродаж</p>
+                        </div>
+                    </div>
+                    <p class="info-market">Магазин бытовых товаров</p>
+                    <div class="d-flex"><i class="fa fa-map-marker"></i>
+                        <p>Россия, г.Москва </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-phone"></i>
+                        <a class="footer__link" href="tel:8(800)1234567">8 (800) 123 45 67</a>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-envelope"></i>
+                        <a class="footer__link" href="mailto:info@mail.ru">info@mail.ru</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer__dbl_menu">
+                        <div class="footer__menu_title">
+                            <p>Информация</p>
+                        </div>
+                        <div>
+                            <a href="#">О нас</a>
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Условия пользования</a>
+                            <a href="#">Самовывоз и доставка</a>
+                            <a href="#">Вакансии</a>
+                            <a href="#">Тех. поддержка</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 social">
+                    <div class="footer__social_wrap">
+                        <div class="footer__social_title">
+                            <p>Мы в соц сетях</p>
+                        </div>
+                        <div class="d-flex footer__social">
+                            <div>
+                                <div class="d-flex"><i class="fa fa-instagram"></i>
+                                    <a href="">Instagram</a>
+                                </div>
+                                <div class="d-flex"><i class="fa fa-twitter"></i>
+                                    <a href="">Twitter</a>
+                                </div>
+                                <div class="d-flex"><i class="fa fa-youtube-play"></i>
+                                    <a href="">YouTube</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex"><i class="fa fa-facebook"></i>
+                                    <a href="">Facebook</a>
+                                </div>
+                                <div class="d-flex"><i class="fa fa-rss"></i>
+                                    <a href="">RSS</a>
+                                </div>
+                                <div class="d-flex"><i class="fa fa-google-plus"></i>
+                                    <a href="">Google Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 time-working">
+                    <div class="footer__working_wrap">
+                        <div class="footer__title_work">
+                            <p class="footer__work_time">Режим работы</p>
+                            <div class="d-flex"><i class="fa fa-building"></i>
+                                <div>
+                                    <p>Пн-Пт: 8:30-21:30</p>
+                                    <p>Сб-Вс: 9:00-21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__buy_wrap">
+                            <p class="footer__buy">Способы оплаты</p>
+                            <div class="d-flex">
+                                <i class="fa fa-cc-visa"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-discover"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="owl-carousel/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+                return false;
+            });
+
+            //
+            $('.mobile-tab').hide();
+            $('.nav-toggle').on('click', function () {
+                $('.mobile-tab').slideToggle(300);
+            });
+
+            $('.tablet').css('display', 'none');
+            $('.tablet-toggle').on('click', function () {
+                $('.tablet').css('display', 'block');
+            });
+
+            //
+            (function () {
+                var toggle = document.querySelector('.nav-toggle');
+
+                toggle.addEventListener('click', function (e) {
+                    this.classList.toggle('opened');
+                });
+            })();
+        });   
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.spoiler-title').click(function () {
+                $(this).parent().children('.spoiler-body').slideToggle();
+                return false;
+            });
+            $('#down').show();
+            $('#up').hide();
+
+            $('#down_two').show();
+            $('#up_two').hide();
+
+            $('#down_three').show();
+            $('#up_three').hide();
+
+            $('#down_four').show();
+            $('#up_four').hide();
+
+            $('#down_five').show();
+            $('#up_five').hide();
+
+            $('#down_six').show();
+            $('#up_six').hide();
+
+            $('#down_seven').show();
+            $('#up_seven').hide();
+
+            $('#down_eight').show();
+            $('#up_eight').hide();
+
+            $('#down_nine').show();
+            $('#up_nine').hide();
+
+            $('#down_eleven').show();
+            $('#up_eleven').hide();
+
+            $('#slide_one').click(function () {
+                $('#up').each((i, c) => c != $(this).find('#up')[0] ? $(c).show() : $(c).toggle());
+                $('#down').each((i, c) => c != $(this).find('#down')[0] ? $(c).hide() : $(c).toggle());
+            });
+            $('#slide_two').click(function () {
+                $('#up_two').each((i, c) => c != $(this).find('#up_two')[0] ? $(c).show() : $(c).toggle());
+                $('#down_two').each((i, c) => c != $(this).find('#down_two')[0] ? $(c).hide() : $(c).toggle());
+            });
+            $('#slide_three').click(function () {
+                $('#up_three').each((i, c) => c != $(this).find('#up_three')[0] ? $(c).show() : $(c).toggle());
+                $('#down_three').each((i, c) => c != $(this).find('#down_three')[0] ? $(c).hide() : $(c).toggle());
+            });
+            $('#slide_four').click(function () {
+                $('#up_four').each((i, c) => c != $(this).find('#up_four')[0] ? $(c).show() : $(c).toggle());
+                $('#down_four').each((i, c) => c != $(this).find('#down_four')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            $('#slide_five').click(function () {
+                $('#up_five').each((i, c) => c != $(this).find('#up_five')[0] ? $(c).show() : $(c).toggle());
+                $('#down_five').each((i, c) => c != $(this).find('#down_five')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            $('#slide_six').click(function () {
+                $('#up_six').each((i, c) => c != $(this).find('#up_six')[0] ? $(c).show() : $(c).toggle());
+                $('#down_six').each((i, c) => c != $(this).find('#down_six')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            $('#slide_seven').click(function () {
+                $('#up_seven').each((i, c) => c != $(this).find('#up_seven')[0] ? $(c).show() : $(c).toggle());
+                $('#down_seven').each((i, c) => c != $(this).find('#down_seven')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            $('#slide_eight').click(function () {
+                $('#up_eight').each((i, c) => c != $(this).find('#up_eight')[0] ? $(c).show() : $(c).toggle());
+                $('#down_eight').each((i, c) => c != $(this).find('#down_eight')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            $('#slide_nine').click(function () {
+                $('#up_nine').each((i, c) => c != $(this).find('#up_nine')[0] ? $(c).show() : $(c).toggle());
+                $('#down_nine').each((i, c) => c != $(this).find('#down_nine')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            $('#slide_eleven').click(function () {
+                $('#up_eleven').each((i, c) => c != $(this).find('#up_eleven')[0] ? $(c).show() : $(c).toggle());
+                $('#down_eleven').each((i, c) => c != $(this).find('#down_eleven')[0] ? $(c).hide() : $(c).toggle());
+            });
+
+            /*$('.btn').click(function () {
+                $('.btn, .mnu-wrap').toggleClass('active');
+            })*/
+
+
+        });
+    </script>
+    <script>
+        //карусель категорий
+        $('.single-item').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+
+            ]
+        });
+
+        //карусель спец предложений
+        $('.hot-deals').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 361,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
+        });
+
+        //карусель новых товаров
+        $('.new-products').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 376,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 361,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
+        });
+
+
+        //выбор покупателей
+        $('.deal-products').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 376,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 361,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
+        });
+
+        //другие товары
+        $('.commodity-products').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1201,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 440,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 377,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 361,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
+        });
+
+    </script>
+</body>
+
+</html>

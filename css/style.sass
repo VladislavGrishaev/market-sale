@@ -1,0 +1,742 @@
+body
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    p, ul
+        padding: 0
+        margin: 0
+    li
+        list-style: none
+    a
+        text-decoration: none
+.header
+    background-color: #222222
+    &__nav_wrap
+        display: flex
+        justify-content: space-between
+    &__serach_basket, ul, &__basket_info
+        display: flex
+    &__logo_wrap
+        align-self: center
+        display: flex
+        font-size: 32px
+    &__logo_wrap p
+        color: #fff
+    &__logo_wrap span
+        color: #f10e34
+    &__logo_wrap p, &__logo_wrap span
+        font-family: 'Lobster', cursive !important
+    .input-group-append
+        display: flex;
+        align-self: flex-start;
+    a, &__title_basket p, &__title_basket span
+        color: #fff
+    &__menu ul li
+        border-right: 1px solid #fff
+        margin-left: 15px
+        padding-right: 15px
+    &__last_link
+        border: none !important
+    &__menu_wrap
+        width: 50%
+        margin-top: 15px
+    &__menu, &__serach_basket
+        margin-bottom: 20px
+    &__basket_wrap
+        margin-left: 40px
+    ul
+        justify-content: flex-end
+    &__serach_basket
+        align-items: center
+    &__btn_basket_wrap
+        align-self: center
+    &__title_basket
+        margin-left: 5px
+    &__btn_basket
+        border-radius: 50%
+        border: none
+        height: 40px
+        width: 40px
+        background-color: #f10e34
+    .fa
+        color: #ffffff
+    .btn-outline-secondary
+        background-color: #f10e34
+        border: 1px solid #f10e34
+    a:hover
+        text-decoration: none
+        color: #f10e34
+    p, a, span
+        font-family: 'Play', sans-serif;
+    &__btn_basket:hover
+        background-color: #6c757d;
+        border-color: #6c757d;
+    span
+        display: flex
+    .fa-rub
+        align-self: center
+        margin-left: 3px
+    .d-flex
+        display: none !important
+    .form-control:focus
+        border-color: #212529
+        box-shadow: 0 0 0 0.2rem #f22f49
+
+
+.nav
+    background-color: #f10e34
+    a, .tablet-toggle
+        font-family: 'Play', sans-serif
+        color: #fff
+        text-transform: uppercase
+    a:hover
+        color: #000
+        text-decoration: none
+    &__title_info
+        justify-content: space-between
+    &__title_nav, &__categories_wrap
+        margin-left: 25px
+        margin-top: 15px
+        margin-bottom: 15px
+    .tablet_menu
+        display: none
+    .form-control:focus
+        border-color: #f10e34
+        outline: none;
+    .form-control:focus, .btn:focus
+        box-shadow: none;
+    .btn-outline-secondary
+        border-color: #fff
+
+.collection
+    background-color: #f3f3f3
+    .slider
+        display: none
+    p, a
+        font-family: 'Play', sans-serif;
+    &__wrap_text_slide
+        display: flex
+        flex-direction: column
+    #slide_one, #slide_two, #slide_three, #slide_four,
+    #slide_five, #slide_six, #slide_seven, #slide_eight,
+    #slide_nine
+        display: flex
+        align-items: center
+        background: transparent;
+        border: none;
+        width: 100%;
+        justify-content: space-between;
+    &__sidebar_left
+        background-color: #fff
+        margin-right: 10px
+    button:focus
+        outline: none
+    button
+        color: #595959
+    button:hover
+        color: #f10e34
+    a
+        color: #000
+    a:hover
+        text-decoration: none
+        color: #f10e34
+        font-weight: bold
+    &__wrap_slide
+        border-bottom: 1px solid #eaeaea
+        padding-bottom: 20px
+        padding-top: 20px
+    .spoiler-body
+        margin-left: 5px
+        margin-top: 10px
+    &__text_slide
+        text-align: center
+        padding-bottom: 10px
+    &__bg_wrap
+        background-image: url('../img/bg_top.png')
+        background-repeat: no-repeat
+        background-size: cover
+        //height: 375px
+    &__sidebar_right
+        margin-left: 10px
+    &__title
+        font-size: 38px
+        font-family: 'Ubuntu', sans-serif !important
+        color: #303a7a
+        padding-top: 50px;
+        padding-bottom: 50px
+    &__info
+        font-size: 60px
+        font-family: 'Ubuntu', sans-serif !important
+        margin-top: -30px
+    &__info_buy
+        font-size: 22px
+        font-family: 'Ubuntu', sans-serif !important
+        margin-top: -15px
+    &__title_info
+        width: 70%
+        text-align: center
+    &__sale
+        font-size: 60px
+        font-family: 'Ubuntu', sans-serif !important
+        font-weight: bold
+        color: #f10e34
+        margin-top: -30px
+    &__buy_btn
+        width: 70%
+        display: flex
+        justify-content: center
+        margin-top: 45px
+        padding-bottom: 40px
+    &__special_bar_wrap
+        display: flex
+        background-color: #f10e34
+    &__special_bar span, &__special_bar p
+        color: #fff
+    &__special_bar span
+        font-weight: bold
+        letter-spacing: 2px
+        text-transform: uppercase
+        font-size: 15px
+    &__special_bar p
+        font-size: 13px
+    &__special_bar
+        margin: 15px 10px 15px 10px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center 
+    .fa
+        margin-left: 5px
+    &__buy_btn button a
+        color: #000000
+        text-transform: uppercase
+        font-weight: bold
+    &__buy_btn button
+        background: transparent
+        border: 2px solid #000000
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    &__buy_btn button:hover
+        border: 2px solid #f10e34
+        color: #f10e34
+    
+.products
+    background-color: #f3f3f3
+    &__sidebar_left, &__sidebar_right 
+        margin-top: 30px
+        background-color: #fff
+    &__sidebar_left
+        margin-right: 10px
+    &__sidebar_right 
+        margin-left: 10px
+
+    //slider start
+    .slick-dots
+        display: none !important
+    .slick-next, .slick-prev
+        background-color: red
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        margin-top: -215px
+    .slick-next:focus, .slick-prev:focus,
+    .slick-next:hover, .slick-prev:hover
+        background-color: red
+    .slick-next:before
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        content: "\f0da"
+    .slick-prev:before
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        content: "\f0d9"
+    .slick-next
+        padding-left: 3px;
+        padding-top: 1px;
+        margin-right: 25px
+    .slick-prev
+        padding-top: 1px;
+        padding-right: 3px;
+        margin-left: 220px
+        z-index: 1
+    &__hot_deals p
+        font-family: 'Play', sans-serif;
+        font-weight: bold
+        text-transform: uppercase
+        color: #000
+        padding-bottom: 30px
+        margin-top: 30px
+    &__bg_slider
+        margin-right: 10px
+        margin-left: 10px
+    .hot-deals
+        margin-top: 25px
+    //slider end
+
+    &__title_info
+        font-family: 'Play', sans-serif;
+        text-align: center
+        margin-top: 20px
+    &__title_info p
+        margin-bottom: 5px
+    &__info p
+        text-decoration: line-through
+    &__info span
+        margin-left: 10px
+    &__info
+        justify-content: center
+    .fa-rub
+        align-self: center
+        margin-left: 3px;
+        font-size: 14px;
+    .price
+        margin: 0
+    .fa-star, .fa-star-o
+        color: #ffc808
+
+    //slider 2 start
+    &__sidebar_right .new-products .slick-prev,
+    &__sidebar_right .new-products .slick-next
+        margin: 0;
+        margin-top: -215px;
+    &__sidebar_right .new-products .slick-prev
+        margin-left: 690px;
+    &__sidebar_right .new-products .slick-next
+        margin-right: 30px
+    .slick-list
+        margin-top: 25px
+    &__hot_deals
+        display: flex
+        border-bottom: 1px solid #eaeaea
+        justify-content: space-between
+    &__categories_slider
+        display: flex
+        align-items: center
+        margin-right: 90px
+    &__categories_slider a, &__title_info a
+        font-family: 'Play', sans-serif
+        color: #000
+    &__categories_slider a
+        margin-left: 25px
+    &__categories_slider a:hover, &__title_info a:hover
+        text-decoration: none
+        color: #f10e34
+    
+
+.deal
+    background-color: #f3f3f3
+    &__sidebar_left, &__sidebar_right 
+        margin-top: 30px
+        background-color: #fff
+    &__fashion
+        background-image: url('../img/fashion.png')
+        background-repeat: no-repeat
+        margin-top: 30px
+        background-size: 100% 100%
+        text-align: center
+        padding-bottom: 20px
+    &__fashion_info
+        text-align: center
+    &__sidebar_left
+        margin-right: 10px
+        height: 100%
+    &__sidebar_right 
+        margin-left: 10px
+    &__fashion span
+        font-family: 'Ubuntu', sans-serif !important
+        font-size: 70px
+        color: #ffc808
+        font-weight: bold
+        border: 2px solid;
+        padding-left: 5px;
+        padding-right: 5px;
+    &__fashion p, &__fashion a
+        font-family: 'Play', sans-serif
+        font-size: 25px
+        font-weight: bold
+    &__fashion p
+        color: #ffc808
+        font-size: 30px
+    &__fashion a:hover
+        text-decoration: none
+        color: #f10e34
+    &__fashion a
+        border-bottom: 3px solid #138ce9
+        color: #fff
+        text-transform: uppercase
+    &__title_info a
+        font-family: 'Play', sans-serif
+        color: #000
+    &__title_info a:hover, &__categories_slider a:hover
+        text-decoration: none
+        color: #f10e34 !important
+
+    //slider start
+    .img-fluid
+        margin: 0 auto
+    .slick-dots
+        display: none !important
+    .slick-next, .slick-prev
+        background-color: red
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        margin-top: -220px
+    .slick-next:focus, .slick-prev:focus,
+    .slick-next:hover, .slick-prev:hover
+        background-color: red
+    .slick-next:before
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        content: "\f0da"
+    .slick-prev:before
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        content: "\f0d9"
+    .slick-next
+        padding-left: 3px;
+        padding-top: 1px;
+        margin-right: 25px
+    .slick-prev
+        padding-top: 1px;
+        padding-right: 3px;
+        margin-left: 220px
+        z-index: 1
+    &__hot_deals p
+        font-family: 'Play', sans-serif;
+        font-weight: bold
+        text-transform: uppercase
+        color: #000
+        padding-bottom: 30px
+        margin-top: 30px
+    &__bg_slider
+        margin-right: 10px
+        margin-left: 10px
+    .hot-deals
+        margin-top: 25px
+    //slider end
+
+    &__title_info
+        font-family: 'Play', sans-serif;
+        text-align: center
+        margin-top: 20px
+    &__title_info p
+        margin-bottom: 5px
+    &__info p
+        text-decoration: line-through
+    &__info span
+        margin-left: 10px
+    &__info
+        justify-content: center
+    .fa-rub
+        align-self: center
+        margin-left: 3px;
+        font-size: 14px;
+    .price
+        margin: 0
+    .fa-star, .fa-star-o
+        color: #ffc808
+
+    //slider 2 start
+    &__sidebar_right .deal-products .slick-prev,
+    &__sidebar_right .deal-products .slick-next
+        margin: 0;
+        margin-top: -215px;
+    &__sidebar_right .deal-products .slick-prev
+        margin-left: 690px;
+    &__sidebar_right .deal-products .slick-next
+        margin-right: 30px
+    .slick-list
+        margin-top: 25px
+    &__hot_deals
+        display: flex
+        border-bottom: 1px solid #eaeaea
+        justify-content: space-between
+    &__categories_slider
+        display: flex
+        align-items: center
+        margin-right: 90px
+    &__categories_slider a
+        font-family: 'Play', sans-serif
+        color: #000
+        margin-left: 25px
+    &__categories_slider a:hover
+        text-decoration: none
+        color: #000
+
+.form
+    background-color: #f3f3f3
+    &__sidebar_left, &__sidebar_right 
+        background-color: #fff
+    &__sidebar_left
+        margin-right: 10px
+        margin-top: -190px;
+        height: 100%;
+    &__sidebar_right 
+        margin-top: 30px
+        margin-left: 10px
+        display: flex
+    form
+        margin-top: 25px
+    &__subscribe_wrap
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-bottom: 1px solid #eaeaea;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    &__subscribe_wrap p
+        font-family: 'Play', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+        padding-bottom: 30px;
+        margin-top: 30px;
+    &__sub_form p
+        padding-top: 25px
+    .form-row
+        padding-bottom: 30px
+    input
+        margin-bottom: 25px
+        background-color: #f3f3f3
+    .btn
+        background-color: #f22f49
+        border-radius: 25px
+        border: none
+        text-transform: uppercase
+    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,
+    .btn-primary:hover
+        background-color: #f10e34
+        border-color: #f10e34
+    &__sidebar_right
+        height: 100%
+    &__info_product
+        padding-top: 45px
+    &__product_buy
+        padding-bottom: 45px
+        margin-top: 25px
+    &__img_left
+        display: flex
+        align-items: center
+        width: 50%
+    &__img_left img
+        width: 100%
+    &__product_wrap
+        margin: 0 auto
+    &__product_buy button
+        background-color: #f22f49
+        border-radius: 25px
+        border: none
+        color: #fff
+        padding-top: 6px
+        padding-bottom: 6px
+        padding-left: 12px
+        padding-right: 12px
+        text-transform: uppercase
+    &__product_buy button:hover
+        background-color: #f10e34
+    &__info_product p, &__info_product span
+        text-transform: uppercase
+        font-family: 'Play', sans-serif
+    &__info_product p
+        font-weight: bold
+        color: #0f8ce9
+        padding-bottom: 5px
+    .form-control:focus
+        border-color: #f22f49
+        box-shadow: 0 0 0 0.2rem #f22f49
+
+
+
+.commodity
+    background-color: #f3f3f3
+    &__sidebar_right
+        background-color: #fff
+        margin-left: 10px
+        margin-top: 30px
+    &__sidebar_left
+        margin-right: 10px
+        padding: 0 !important
+        margin-top: -100px
+    .container
+        padding-bottom: 30px
+    //slider start
+    .slick-dots
+        display: none !important
+    .slick-next, .slick-prev
+        background-color: red
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        margin-top: -190px
+    .slick-next:focus, .slick-prev:focus,
+    .slick-next:hover, .slick-prev:hover
+        background-color: red
+    .slick-next:before
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        content: "\f0da"
+    .slick-prev:before
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        content: "\f0d9"
+    .slick-next
+        padding-left: 3px;
+        padding-top: 1px;
+        margin-right: 25px
+    .slick-prev
+        padding-top: 1px;
+        padding-right: 3px;
+        margin-left: 690px
+        z-index: 1
+    &__hot_deals p
+        font-family: 'Play', sans-serif;
+        font-weight: bold
+        text-transform: uppercase
+        color: #000
+        padding-bottom: 30px
+        margin-top: 30px
+    &__bg_slider
+        margin-right: 10px
+        margin-left: 10px
+    .hot-deals
+        margin-top: 25px
+    &__hot_deals
+        display: flex
+        border-bottom: 1px solid #eaeaea
+        justify-content: space-between
+    &__sidebar_right .deal-products .slick-prev,
+    &__sidebar_right .deal-products .slick-next
+        margin: 0;
+        margin-top: -215px;
+    &__sidebar_right .deal-products .slick-prev
+        margin-left: 690px;
+    &__sidebar_right .deal-products .slick-next
+        margin-right: 30px
+    .slick-list
+        margin-top: 25px
+
+    &__categories_slider
+        display: flex
+        align-items: center
+        margin-right: 90px
+    &__categories_slider a
+        font-family: 'Play', sans-serif
+        color: #000
+        margin-left: 25px
+    &__categories_slider a:hover
+        text-decoration: none
+        color: #000
+    //slider end
+
+    &__title_info
+        font-family: 'Play', sans-serif;
+        text-align: center
+        margin-top: 20px
+    &__title_info p
+        margin-bottom: 5px
+    &__info p
+        text-decoration: line-through
+
+    &__info
+        justify-content: center
+        flex-direction: column
+  
+    .fa-rub
+        align-self: center
+        margin-left: 3px;
+        font-size: 14px;
+    .price
+        margin: 0
+    .fa-star, .fa-star-o
+        color: #ffc808
+    &__title_info a
+        font-family: 'Play', sans-serif
+        color: #000
+    &__title_info a:hover
+        text-decoration: none
+        color: #f10e34 !important
+
+.partners
+    background-color: #f10e34
+    &__wrap_img img
+        width: 10%
+    &__wrap_img
+        justify-content: space-around
+        padding-bottom: 20px    
+    &__title
+        justify-content: center
+        width: 100%
+    &__title p
+        color: #fff
+        font-family: 'Play', sans-serif
+        font-weight: bold
+        text-transform: uppercase
+    
+.footer
+    background-color: #222222
+    p, a
+        color: #b6b6b6
+    i
+        color: #f10e34
+        display: flex
+        align-items: center
+        margin-top: -10px
+    a
+        display: flex
+        margin-bottom: 10px
+    a:hover
+        text-decoration: none
+        color: #f10e34
+
+    &__dbl_menu, &__social_wrap, &__working_wrap
+        margin-top: 50px
+        margin-bottom: 30px
+    .d-flex p
+        margin-left: 10px
+        margin-bottom: 10px
+    &__link
+        margin-left: 10px 
+    &__menu_title p, &__social_title p, &__work_time, &__buy
+        text-transform: uppercase    
+        font-weight: bold
+        color: #fff !important
+    &__menu_title, &__social_title, &__work_time, &__buy
+        margin-bottom: 20px
+    &__social
+        justify-content: space-between
+    &__buy_wrap .d-flex
+        justify-content: space-between
+    &__buy_wrap .d-flex .fa
+        font-size: 40px
+    &__social .d-flex a
+        margin-left: 10px
+    &__logo_wrap
+        align-self: center
+        display: flex
+        font-size: 20px
+        margin-top: 25px;
+        margin-bottom: 10px 
+    &__logo_wrap p
+        color: #fff
+    &__logo_wrap span
+        color: #f10e34
+    &__logo_wrap p, &__logo_wrap span
+        font-family: 'Lobster', cursive !important
+    .info-market
+        margin-bottom: 20px

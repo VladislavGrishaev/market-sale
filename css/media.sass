@@ -1,0 +1,733 @@
+@media screen and (max-width:1200px)
+    .collection
+        &__bg_wrap
+            background: none
+            background-color: #ffc666
+        &__title_info, &__buy_btn
+            width: 100%
+        &__title
+            padding-bottom: 30px
+
+
+@media screen and (max-width:1199px)
+    .nav 
+        a
+            font-size: 14px
+    .products
+        &__hot_deals p
+            font-size: 14px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 180px
+        .slick-next, .slick-prev
+            margin-top: -195px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -205px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 570px
+    .deal
+        &__sidebar_left .hot-deals .slick-prev,
+        &__sidebar_left .hot-deals .slick-next
+            margin-left: 180px
+            margin-top: -220px
+        .slick-next, .slick-prev
+            margin-top: -195px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -195px
+        &__sidebar_right .deal-products .slick-prev
+            margin-left: 570px
+
+    .form
+        &__sidebar_left
+            margin-top: -160px
+    .commodity
+        &__sidebar_left
+            margin-top: -50px
+        &__sidebar_left .hot-deals .slick-prev,
+        &__sidebar_left .hot-deals .slick-next
+            margin-left: 180px
+            margin-top: -220px
+        .slick-next, .slick-prev
+            margin-top: -195px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -195px
+        .slick-prev
+            margin-left: 575px
+        &__sidebar_right .deal-products .slick-prev
+            margin-left: 570px
+
+    .footer
+        &__social
+            flex-direction: column
+        .social
+            display: none
+        .row
+            justify-content: space-between
+        .d-flex p, .d-flex a, &__dbl_menu a
+            white-space: nowrap
+
+
+
+@media screen and (max-width:992px)
+    .header
+        &__menu_wrap, &__nav_wrap
+            display: none
+        #burg
+            display: block
+            width: 100%
+        .mobile-item
+            display: block  
+        .mobile-item li
+            padding-bottom: 20px
+        .nav-toggle
+            position: relative;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid transparent;
+            margin-top: 50px
+            left: 2%
+            transform: translate(-50%, -50%);
+        .nav-toggle [class*='bar-']
+            background-color: #f10e34;
+            display: block;
+            transform: rotate(0deg);
+            transition: .2s ease all;
+            border-radius: 8px;
+            height: 2px;
+            width: 25px;
+            margin-bottom: 4px;
+        .opened .bar-top
+            transform: rotate(45deg);
+            transform-origin: 15% 15%;
+        .opened .bar-mid
+            opacity: 0
+        .opened .bar-bot
+            transform: rotate(-45deg);
+            transform-origin: 15% 95%;
+        .nav-toggle:focus
+            outline: none
+        &__logo_wrap_mobile
+            align-self: center
+        &__btn_basket_mobile
+            align-self: center;
+            margin-left: 20px;
+        .d-flex
+            display: flex !important
+
+    .nav
+        justify-content: center
+        &__categories_wrap
+            display: none
+        .container
+            display: none
+        &__title_nav
+            margin-left: 15px
+            margin-right: 15px
+        .tablet_nav, .tablet_menu
+            display: flex
+        &__btn_basket:focus
+            outline: none
+        .tablet_menu
+            flex-direction: column
+        .fa
+            color: #fff
+        .input-group
+            margin-top: 20px
+            width: 50%
+            align-self: center
+
+    .collection
+        &__sidebar_left
+            display: none
+        .row
+            justify-content: center
+    .products
+        &__sidebar_right, &__sidebar_left
+            margin-left: 0
+            margin-right: 0
+        &__hot_deals p
+            text-align: center
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 175px
+        .slick-prev
+            margin-left: 25px
+        .slick-next, .slick-prev
+            margin-top: -195px
+
+    .deal
+        &__sidebar_left
+            margin-right: 0
+        &__sidebar_right
+            margin-left: 0
+        &__sidebar_left .hot-deals .slick-prev,
+        &__sidebar_left .hot-deals .slick-next
+            margin-left: 180px
+            margin-top: -220px
+        .slick-next, .slick-prev
+            margin-top: -195px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -195px
+        &__sidebar_right .deal-products .slick-prev
+            margin-left: 570px
+
+    .form
+        &__sidebar_left
+            margin-top: 30px
+            margin-right: 0
+        &__sidebar_right
+            margin-left: 0
+
+    .commodity
+        &__sidebar_left
+            margin-right: 0
+            margin-top: 30px
+        &__sidebar_right
+            margin-left: 0
+        &__hot_deals img
+            margin: auto
+        .commodity-products .slick-prev
+            margin-left: 655px
+        .commodity-products .slick-next, .commodity-products .slick-prev
+            margin-top: -220px
+
+@media screen and (max-width:990px) 
+    
+        .products
+            .slick-next, .slick-prev
+                margin-top: -200px
+            &__sidebar_left .hot-deals .slick-prev
+                margin-left: 655px
+            &__sidebar_right .new-products .slick-prev
+                margin-left: 650px
+            &__sidebar_right .new-products .slick-prev,
+            &__sidebar_right .new-products .slick-next
+                margin-top: -220px
+        .deal
+            .slick-next, .slick-prev
+                margin-top: -200px
+            &__sidebar_left .hot-deals .slick-prev
+                margin-left: 655px
+            &__sidebar_right .new-products .slick-prev
+                margin-left: 650px
+            &__sidebar_right .new-products .slick-prev,
+            &__sidebar_right .new-products .slick-next
+                margin-top: -220px
+            &__sidebar_right .deal-products .slick-prev
+                margin-left: 640px
+            &__sidebar_right .deal-products .slick-prev,
+            &__sidebar_right .deal-products .slick-next
+                margin-top: -220px
+        .form
+            &__subscribe_wrap, .form-row
+                justify-content: center
+            input, button
+                margin-bottom: 0 !important
+            &__sub_form
+                text-align: center
+        .footer
+            .row
+                justify-content: normal
+                flex-wrap: nowrap
+
+
+@media screen and (max-width:850px)
+    .nav
+        &__title_nav
+            margin-left: 10px
+            margin-right: 10px
+    
+@media screen and (max-width:769px)
+    .nav
+        &__categories_wrap
+            display: block
+            margin-left: 0
+            text-align: center
+        .tablet_nav
+            display: none !important
+        .input-group
+            width: 100%
+    .collection
+        padding-top: 30px
+        &__sidebar_left
+            display: none
+        .slider
+            display: flex
+        &__sidebar_right
+            margin: 0
+        //slider start
+        &__bg_slider
+            background-color: #f10e34
+            margin-left: 10px
+            margin-right: 10px
+        .slick-prev, .slick-next
+            background-color: #f10e34
+        .slick-prev:focus, .slick-next:focus
+            background-color: #f10e34
+        .clothes
+            background-image: url('../img/clothes.svg')
+        .electronics
+            background-image: url('../img/electronics.svg')
+        .shoes
+            background-image: url('../img/shoes.svg')
+        .watch
+            background-image: url('../img/watch.svg')
+        .jewelry
+            background-image: url('../img/jewelry.svg')
+        .beauty
+            background-image: url('../img/beauty.svg')
+        .children
+            background-image: url('../img/children.svg')
+        .sport
+            background-image: url('../img/sport.svg')
+        .garden
+            background-image: url('../img/garden.svg')
+        .clothes, .electronics, .shoes, .watch, .jewelry,
+        .beauty, .children, .sport, .garden
+            background-position-y: 20px
+            background-repeat: no-repeat
+            background-size: 50%
+            padding-top: 80px;
+            height: 115px
+            background-position-x: center
+            text-align: center
+        .clothes a, .electronics a, .shoes a, .watch a,
+        .jewelry a, .beauty a, .children a, .sport a,
+        .garden a
+            color: #fff
+        .slick-dots
+            display: none !important
+        &__bg_slider:focus, .single-item a:focus
+            outline: none
+        .single-item a:hover
+            color: #000
+        .slick-prev
+            padding-top: 1px;
+            padding-right: 3px;
+            z-index: 1;
+            background-color: red;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+        .slick-prev:focus, .slick-prev:hover, .slick-prev:active
+            background-color: red
+        .slick-prev:before
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 20px;
+            text-rendering: auto;
+            content: "\f0d9";
+        .slick-next
+            padding-top: 1px;
+            padding-left: 3px
+            z-index: 1;
+            background-color: red;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+        .slick-next:focus, .slick-next:hover, .slick-next:active
+            background-color: red
+        .slick-next:before
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 20px;
+            text-rendering: auto;
+            content: "\f0da";
+        
+        //slaider end
+
+@media screen and (max-width:767px)
+    .products
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        .slick-next, .slick-prev
+            margin-top: -180px
+        &__hot_deals
+            flex-direction: column
+        &__categories_slider
+            margin-right: 0
+            justify-content: center
+            margin-bottom: 25px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -255px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 25px
+    .deal
+        &__hot_deals
+            justify-content: center
+        &__categories_slider
+            margin-right: 0
+            justify-content: space-around
+        &__categories_slider a
+            margin-left: 0
+        &__hot_deals
+            flex-direction: column
+        &__hot_deals p
+            text-align: center
+        .slick-next, .slick-prev
+            margin-top: -200px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 650px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -220px
+        &__sidebar_right .deal-products .slick-prev
+            margin-left: 25px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -220px
+        &__sidebar_left .hot-deals .slick-prev, 
+        &__sidebar_left .hot-deals .slick-next
+            margin-top: -205px
+    .commodity
+        &__hot_deals
+            justify-content: center
+        .commodity-products .slick-prev
+            margin-left: 25px
+        .commodity-products .slick-next, .commodity-products .slick-prev
+            margin-top: -220px
+    .footer
+        .time-working
+            display: none
+
+
+
+@media screen and (max-width:728px)
+    .products
+        .slick-next, .slick-prev
+            margin-top: -175px
+
+
+@media screen and (max-width:640px)
+    .collection
+        .slick-prev, .slick-next
+            display: none !important
+
+    .partners
+        &__wrap_img
+            flex-direction: column
+        &__wrap_img img
+            margin: 0 auto
+            width: 20% 
+
+@media screen and (max-width:576px)
+    .header
+        .burg_span, .mobile-tab
+            margin-left: 5%
+            margin-right: 5%
+    .collection
+        &__special_bar_wrap
+            flex-direction: column   
+    .products
+        &__sidebar_left
+            margin-right: 0
+            margin-left: 0
+            margin-top: 30px;
+        .slick-next, .slick-prev
+            margin-top: -215px  
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -250px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 25px
+        .img-fluid
+            width: 100%
+    .deal
+        .slick-next, .slick-prev
+            margin-top: -200px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 650px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -250px
+        &__sidebar_right .deal-products .slick-prev
+            margin-left: 25px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -250px
+        &__sidebar_left .hot-deals .slick-prev, 
+        &__sidebar_left .hot-deals .slick-next
+            margin-top: -225px
+    .form
+        &__sidebar_right
+            flex-direction: column
+        &__img_left
+            width: auto
+            margin-top: 20px
+        &__product_wrap
+            text-align: center
+
+
+@media screen and (max-width:512px)
+    .collection
+        .clothes, .electronics, .shoes, .watch, 
+        .jewelry, .beauty, .children, .sport, .garden
+            background-size: 55%;
+    .products
+        .slick-next, .slick-prev
+            margin-top: -175px      
+        &__sidebar_left, &__sidebar_right
+            margin-left: 15px
+            margin-right: 15px
+            width: 94% !important
+        .slick-next, .slick-prev
+            margin-top: -200px  
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -285px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 25px
+    .deal
+        &__sidebar_left, &__sidebar_right
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 94% !important;
+    .form
+        &__sidebar_left, &__sidebar_right
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 94% !important;
+
+    .commodity
+        &__sidebar_right
+            width: 94% !important
+            margin-right: 15px
+            margin-left: 15px
+        &__hot_deals
+            justify-content: center
+        .commodity-products .slick-prev
+            margin-left: 25px
+        .commodity-products .slick-next, .commodity-products .slick-prev
+            margin-top: -210px
+
+    .footer
+        .row
+            flex-direction: column
+            display: grid
+            justify-content: center
+        &__logo_wrap
+            justify-content: center
+        .info-market, &__menu_title
+            text-align: center
+        &__logo_wrap
+            font-size: 30px
+
+@media screen and (max-width:490px)
+    .collection
+        .clothes, .electronics, .shoes, .watch, 
+        .jewelry, .beauty, .children, .sport, .garden
+            background-size: 60%;
+    .products
+        .slick-next, .slick-prev
+            margin-top: -195px  
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -280px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 390px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 385px
+
+
+@media screen and (max-width:480px)
+    .collection
+        .clothes, .electronics, .shoes, .watch, 
+        .jewelry, .beauty, .children, .sport, .garden
+            padding-top: 100px;
+            height: 135px;
+        
+    .products
+        .slick-next, .slick-prev
+            margin-top: -195px  
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -280px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 25px
+    .deal
+        .row
+            flex-direction: column  
+        &__fashion_one, &__fashion_two
+            max-width: 100% !important
+        &__fashion
+            padding-top: 30px
+        .slick-next, .slick-prev
+            margin-top: -200px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 650px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -245px
+        &__sidebar_right .deal-products .slick-prev
+            margin-left: 25px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -245px
+        &__sidebar_left .hot-deals .slick-prev, 
+        &__sidebar_left .hot-deals .slick-next
+            margin-top: -220px
+    .form
+        .form-row
+            flex-direction: column
+        .btn
+            margin-top: 25px
+
+
+@media screen and (max-width:440px)
+    .commodity
+        .commodity-products .slick-prev
+            margin-left: 25px
+        .commodity-products .slick-next, .commodity-products .slick-prev
+            margin-top: -230px
+
+@media screen and (max-width:426px)
+    .header
+        &__logo_wrap_mobile
+            display: none
+    .collection
+        .clothes, .electronics, .shoes, .watch, 
+        .jewelry, .beauty, .children, .sport, .garden
+            background-size: 70%;
+    .products
+        &__sidebar_left, &__sidebar_right
+            width: 92% !important
+        .slick-next, .slick-prev
+            margin-top: -180px  
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -260px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 25px
+    
+    .deal
+        &__sidebar_left, &__sidebar_right
+            width: 92% !important
+        &__sidebar_left .hot-deals .slick-prev, 
+        &__sidebar_left .hot-deals .slick-next
+            margin-top: -210px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -230px
+
+
+
+@media screen and (max-width:375px)
+    .collection
+        .clothes, .electronics, .shoes, .watch, 
+        .jewelry, .beauty, .children, .sport, .garden
+            background-size: 75%;
+        .clothes a, .electronics a, .shoes a, .watch a,
+        .jewelry a, .beauty a, .children a, .sport a,
+        .garden a
+            font-size: 14px
+    .products
+        .img-fluid
+            margin: 0 auto
+            width: auto
+        .slick-next, .slick-prev
+            margin-top: -175px  
+        &__sidebar_right
+            width: 92% !important
+        &__categories_slider
+            justify-content: space-around
+        &__categories_slider a
+            margin: 0 
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -270px
+        &__sidebar_left .hot-deals .slick-prev
+            margin-left: 25px
+        &__sidebar_right .new-products .slick-prev
+            margin-left: 30px
+    .deal
+        &__categories_slider
+            margin-bottom: 25px
+        &__sidebar_left, &__sidebar_right
+            width: 92% !important
+        &__sidebar_left .hot-deals .slick-prev, 
+        &__sidebar_left .hot-deals .slick-next
+            margin-top: -195px
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -230px
+        &__sidebar_right .deal-products .slick-prev,
+        &__sidebar_right .deal-products .slick-next
+            margin-top: -270px
+    .commodity
+        &__sidebar_right
+            width: 92% !important
+        &__sidebar_right img
+            margin: 0 auto
+        &__info
+            flex-direction: row
+        &__info span
+            margin-left: 10px
+        .commodity-products .slick-prev
+            margin-left: 25px
+        .commodity-products .slick-next, .commodity-products .slick-prev
+            margin-top: -220px
+
+    .partners
+        &__wrap_img
+            flex-direction: column
+        &__wrap_img img
+            margin: 0 auto
+            width: 20%  
+    .footer
+        &__logo_wrap
+            font-size: 25px
+
+
+@media screen and (max-width:360px)
+    .collection
+        &__info
+            font-size: 50px
+    .products
+        &__sidebar_left
+            width: 92% !important
+        &__sidebar_right .new-products .slick-prev,
+        &__sidebar_right .new-products .slick-next
+            margin-top: -265px
+        .slick-next, .slick-prev
+            margin-top: -220px  
+    .deal
+        &__sidebar_left .hot-deals .slick-prev, 
+        &__sidebar_left .hot-deals .slick-next
+            margin-top: -220px
+
+
+@media screen and (max-width:320px)
+        .collection
+            .clothes, .electronics, .shoes, .watch, 
+            .jewelry, .beauty, .children, .sport, .garden
+                background-size: 75%;
+                padding-top: 85px
+                height: 120px
+            .clothes a, .electronics a, .shoes a, .watch a,
+            .jewelry a, .beauty a, .children a, .sport a,
+            .garden a
+                font-size: 12px
+            &__info
+                margin-top: -50px
+        .products
+            .slick-next, .slick-prev
+                margin-top: -215px  
+        .deal
+            &__sidebar_left .hot-deals .slick-prev, 
+            &__sidebar_left .hot-deals .slick-next
+                margin-top: -220px
